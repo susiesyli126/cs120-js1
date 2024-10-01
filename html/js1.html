@@ -10,18 +10,13 @@
     <div id="children-info"></div>
 
     <script>
-        // Ask for the user's first name
+        // First and last name 
         const firstName = prompt("Please enter your first name:");
-        // Ask for the user's last name
         const lastName = prompt("Please enter your last name:");
-        
-        // Display the full name in an alert
         alert(`Your name is ${firstName} ${lastName}`);
         
-        // Ask for the number of children
+        // Number of children
         const numChildren = parseInt(prompt("How many children do you have?"), 10);
-        
-        // Prepare the message based on the number of children
         let childrenMessage;
         if (numChildren === 0) {
             childrenMessage = "You have no children.";
@@ -30,8 +25,6 @@
         } else {
             childrenMessage = `You have ${numChildren} children.`;
         }
-        
-        // Display the message on the page
         document.getElementById("children-info").innerText = childrenMessage;
     </script>
 </body>

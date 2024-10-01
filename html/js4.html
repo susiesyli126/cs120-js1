@@ -7,26 +7,23 @@
 </head>
 <body>
     <script>
-        // Get the range from the user
         let start = parseInt(prompt("Enter the start of the range:"));
         let end = parseInt(prompt("Enter the end of the range:"));
-        
-        // Initialize variables
         let sum = 0;
         let oddNumbers = "";
 
         // Loop through the range
         for (let i = start; i <= end; i++) {
-            // Add to the sum
+            // Compute sum
             sum += i;
 
-            // Check if the number is odd
+            // Append odd number to the string 
             if (i % 2 !== 0) {
-                oddNumbers += i + " "; // Append odd number to the string
+                oddNumbers += i + " ";
             }
         }
 
-        // Display results
+        // Print results
         document.write("<h2>Odd Numbers in the Range:</h2>");
         document.write(oddNumbers || "None");
         document.write("<h2>Sum of All Numbers in the Range:</h2>");
